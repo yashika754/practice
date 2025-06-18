@@ -1,0 +1,32 @@
+<!-- form submit method
+get/default method (insecure ) data is not visible in url (query parameters)
+post method (secure way of submit data) data do not go in url  (available in formdata field )-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- action -> kis location mai form ko submit krana h -->
+    <!-- # -> same website pe submit krana -->
+
+    <form action="#" method="post">
+        <!-- name -> used to retrive data -->
+        <!-- label for -> when we click on name password email then the box become active  -->
+        <label for="name">Name:</label>
+        <input type="text" id="name"  name="NAME" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"  name="EMAIL" required>
+
+        <label for="password">Password:</label>
+        <input type="password" pattern="" minlength="6" password"  name="PASSWORD" required>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>

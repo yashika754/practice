@@ -1,0 +1,56 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+header{
+    position: fixed;
+    top:0;
+    width:100vw;
+    height: 100vw;;
+    background-color: white;
+}
+
+#logo >img{
+    height:50px;
+    width: 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px;
+    height: 50px;
+    background-color: aliceblue;
+}
+
+#left-nav{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+#right-nav{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+}
+
+#items{
+   display:flex;
+   align-items: center;
+   padding:0 30px;
+   gap:20px;
+}
+
+#items >a{
+    text-decoration: none;
+    color:black;
+    margin-top:20px;
+}

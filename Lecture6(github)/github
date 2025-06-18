@@ -1,0 +1,14 @@
+git & github
+=> we can go to past code but do not make changes in that
+
+git intialise -> (git init)
+
+U ->untrack changes in files
+A ->all the unsaved changes are in staging area
+
+1. staging area -> for rechecking (its a waiting lobby , so that we can recheck code)
+        (git add.)
+
+2. git commit -> its create a version of code you want to save and save the code to local repository with a name
+
+3. 

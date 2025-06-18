@@ -1,0 +1,58 @@
+// javascript-> only coding language in MERN
+// 1. its weekly type language(no need to define datatype)
+// 2. no need to compile before running(code compiles line by line) =>synchronous behaviour
+
+// synchronous -> code runs line by line(one line of code compiles,gives result first )
+// compiler of js -> v8 engine -> browser
+
+
+// node js is not a language it gives an environment to run javascript
+
+// datatype->
+// 1. num
+// 2. string
+// 3. boolean (false values ->0 ,null,undefined,false)
+// 4. null
+// 5. undefined (variable declare but not given value)
+
+// how to define value ->var,let,const
+
+// repl(read expanded print loop) in which javascript run in console 
+ 
+// statement which do not return something by default it will give undefined
+
+//         let a=10;         let a;        a=10;         a=50;       let a=20;      
+//         intialise        declare       assign       reassgin      reintialise      redeclare
+
+// var       true            true          true         true           true            true
+// let       true            true          true         true           false           false
+// const     true            false         true         false           false          false                           
+
+// const cannot change value once it is intialised , but can be updated
+
+// const arr =[1,2,3,4,5]
+// arr=[6,7,8,9,10];    //we cant change it(reassignment not allowed)
+// arr[1]=10;          //we can update it
+
+// Scopes -
+// 1. global
+// 2. blocks -{}
+
+// -> stack (data structres (LIBO )last in first out) 5 4 3 2 1
+
+
+//undefined(only for var)
+console.log(temp);
+var temp="this is temp";
+console.log(temp);
+
+
+// -> call stack ()
+// divided into two parts 
+// 1. read(memory allocation phase)  temp=undefined  
+// 2. execution(code execution phase)  undefined -> temp(--) -> this is temp (print)
+
+// assignment operator is in code execution phase
+
+null -> object 
+

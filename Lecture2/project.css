@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  height: 100px;
+
+  top: 0;
+  width: 100vw;
+}
+
+#logo img {
+  height: 80px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;    
+  /* logo to left and links to right */
+  align-items: center;
+  height:100px;
+  padding:0px 50px;
+}
+
+#nav-items{
+    display:flex;
+    gap:10px;
+}
+
+#nav-items >a{
+text-decoration: none;
+color:white;
+padding:10px;
+font-size:20px;
+}
+
+#image >img{
+ width:1000px;
+ height:500px;
+}
+

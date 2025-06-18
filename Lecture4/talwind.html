@@ -1,0 +1,111 @@
+<!-- color value start from 50 to 900,950 -->
+       <!-- size of text (sm,md,lg,1xl,3xl,xxl) -->
+  <!-- thickness (font-thin,base,semibold,bold,extralight,light,normal,medium) -->
+   <!-- leading ideal value 6 -->
+    <!-- 2 4 6 width of border -->
+     <!-- border-radius ->rounded-(sm,lg,md,xl,full) -->
+
+      <!-- overflow auto jis direction mai overflow h us direction mai lga deta h,
+       overflow scroll ,overflow hiddem , overflow-x-scroll -->
+<!-- padding and margin 1-96 ->p-4(alldirection) pt,pb,(pl,ps),(pr,pe) ,py(top-bottom) px(left-right)-->
+
+<!-- h1,h2,h3.... show in the form of paragraph -->
+
+<!-- custom value->[30px]   text-[30px], w-[30vw]  text-[#2B9EB3]-->   
+ <!-- hexadcimal color opacity - https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4 -->
+
+  <!-- width -> total width of screen can be divided into parts -2,3,5,6,9,11,12
+   w-1/2 (50%)
+   w-1/3 (33.3%)  
+   ....
+   w-1/12 (8.something%)  
+   w-full (100%)
+   w-screen (100vw) 
+   w-[72vw] custom value -->      <!--width same as height-->
+
+    <!-- bg ->[(ur("location of image"))] -->
+    <!-- bg-[linear-gradient(deg,#ffff.#ngknank,#223ac8,....)] -->
+
+    <!-- flex  -->
+    <!-- justify-center justify-between justify-between justify-evenly justify-around -->
+
+
+  <!-- mediaquery -->
+<!-- sm: , md: , lg: ,xl: ,...,4xl: -->
+
+<!-- sm:text-red-500 ->text will be red for small and more than small -->
+
+<!-- animate-spin , animate-bounce , animate-ping-->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="talwind.css">
+  </head>
+  <body>
+
+    <!-- <div class="border-2 border-red-500 w-[80vw] h-[80vh] flex flex-col justify-center 
+    items-center gap-4  flex-wrap">
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+
+    </div> -->
+
+    
+    <div class="border-2 border-red-500 w-[80vw] h-[80vh]
+     grid grid-cols-4 grid-rows-3 gap-2">
+     <img class="w-full" src="https://th.bing.com/th/id/R.6da7161360e52504d26c6ea4bcdaf37a?rik=M%2f6I9yQrweARuw&riu=http%3a%2f%2fwww.hdcarwallpapers.com%2fwalls%2fford_gt_2016-HD.jpg&ehk=HSIQR8fp6svq%2bZFWAPnzCDmRA9EXLou7KRz1qDIVLi8%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <div class="border col-span-2 row-span-2 ">2</div>
+        <div class="border ">3</div>
+        <div class="border ">4</div>
+        <div class="border ">5</div>
+        <div class="border ">6</div>
+
+    </div>
+
+    <h1 class="text-[#2B9EB399] text-red-500 text-3xl font-bold line-through">hello</h1>
+    <h1 class="text-blue-500 text-3xl font-bold line-through leading-20 colorRed animate-ping">
+      Hello world!
+    </h1> 
+    <!-- border -->
+    <p class="  border-2 border-blue-800 border-dashed bg-gray-500 rounded-full">Border</p>
+    <!-- gradient -->
+     <p class="bg-gradient-to-r w-[60vw] from-green-100 to-green-700 shadow-xl shadow-red-800 my-10">gradient</p>
+    <!-- padding and margin -->
+     <p class="bg-yellow-200 p-4 pt-10 w-12 border mx-auto my-5">Padding and Margin</p>
+
+      <!-- media query -->
+     <p class="bg-blue-300 sm:bg-red-300 md:bg-green-300 text-shadow-lg text-shadow-red-300 my-10">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium obcaecati reprehenderit et quae, officiis, architecto modi commodi omnis sequi laudantium eaque deleniti perspiciatis adipisci unde a doloremque facere voluptatum. Sed?
+     </p>
+
+    <!-- overflow -->
+      <p class="bg-green-200 text-[30px] w-20 my-10 capitalize uppercase overflow-hidden 
+       overflow-auto overflow-x-scroll  ">
+        this text is overflowing </p>
+     <!-- custom gradient -->
+      <p class="bg-[linear-gradient(90deg,#1d3557,#457b9d,#d62828)]">custom gradient</p>
+
+    <!-- hover -->
+      <p class="bg-red-200 my-10 hover:bg-red-500 hover:border hover:shadow-md shadow-green-90
+      hover:text-white">
+        hover
+      </p>
+
+      <!-- active -->
+      <p class="bg-red-200 my-10 active:bg-red-500 active:border active:shadow-md shadow-green-90
+      active:text-white">
+       ACtive
+      </p>
+
+
+     
+  </body>
+</html>

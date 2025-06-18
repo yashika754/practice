@@ -1,0 +1,26 @@
+#container{
+border:2px solid black;
+width:90vw;
+height:90vh;
+padding:5px;
+display:flex;
+/* flex-direction: column-reverse; */
+/* justify-content: end; */
+/* aligns child w.r.t main axis */
+justify-content: space-between;
+/* justify-content: space-around; 
+justify-content: space-evenly; */
+/* aligns child w.r.t to cross axis  */
+align-items:stretch;  
+gap:10px;     
+ /* (minmum 10px) -> min row-gap and column-gap*/
+ /* row-gap:10px;
+ column-gap:10px; */
+ flex-wrap:wrap;
+}
+
+#container > div{
+border:1px solid red;
+width:75px;
+height: 75px;
+}
