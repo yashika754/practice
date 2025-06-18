@@ -11,4 +11,10 @@ A ->all the unsaved changes are in staging area
 
 2. git commit -> its create a version of code you want to save and save the code to local repository with a name
 
-3. 
+
+((vim editors command))
+3.   press "i" to write
+     press "esc" to exit writing
+     type ":wq" to save commit
+
+git commit -m"short description /commit name"
