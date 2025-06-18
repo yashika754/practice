@@ -17,4 +17,45 @@ A ->all the unsaved changes are in staging area
      press "esc" to exit writing
      type ":wq" to save commit
 
-git commit -m"short description /commit name"
+ git commit -m"short description /commit name"
+
+3. git log -> show all your (commit / version)
+
+4. git checkout id
+git checkout master -> to go to latest version 
+git checkout main -> to go to main version
+
+head always point to latest version
+
+commit   commit   commit (latest version -> is main/master)
+  v1       v2       v3
+
+
+branches (ek sath jyada log ek hi project par kaam kar paye)
+ --> so that more than 2 people ca work on same project (based on graph data structures)
+
+ main branch - > dev branch - > functionality 1  -> .....
+
+=> (to create branch ) git branch dev
+=> (to check in which branch you are) git branch
+=> (to switch betwwen branch )git checkout branch name/ git switch branch name
+=> (-m se branch ka nam change hota h) git branch -m
+=> (create branch and switch to this branch ) git checkout -b (branch name)
+
+=> git remote add origin (connect local repo and github)
+=> git pull origin main (branch name whose codes you want)
+
+git add.
+git commit 
+git push origin (branch name)
+
+
+main                 -->              dev               --> yashika --> search_bar
+all good code
+checked (tested)
+secure branch only those
+ code go which are secure
+
+to merge the code of search_bar to dev branch (git merge ( ))
+
+Merge conflicts
